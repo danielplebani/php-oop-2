@@ -12,6 +12,27 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 
 <?php
 include 'shop.php';
+include 'shopProducts.php';
+
+array_push(
+    $shopProducts,
+    $RoyalCanin,
+    $Eukanuba,
+    $Felix,
+    $Sheba,
+    $Kong,
+    $Rugby,
+    $Fish,
+    $Mouse,
+    $Matilda,
+    $Ferplast,
+    $Domus,
+    $Glait,
+    $Doccino,
+    $Salviette,
+    $Pettine,
+    $Pala
+);
 ?>
 
 
@@ -76,19 +97,22 @@ include 'shop.php';
 
 
         <div class="d-flex justify-content-center flex-wrap gap-3">
-            <div class="card bg-warning" style="width: 19rem;">
-                <img src="./img/ZooWorld.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">title</h5>
+            <?php foreach ($shopProducts as $product) : ?>
+                <div class="card bg-warning" style="width: 19rem;">
+                    <img src="<?= $product->getImg() ?>" style="height: 17rem; object-fit:cover;" alt="img-card">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $product->getTitle() ?></h5>
+                    </div>
+                    <ul class="list-group list-group-flush bg-warning">
+                        <li class="list-group-item bg-warning border-0">PRICE: <?= $product->getPrice() ?></li>
+                        <li class="list-group-item bg-warning border-0">TYPE: <?= $product->getType() ?></li>
+                        <li class="list-group-item bg-warning border-0">
+                            CATEGORY:
+                            <i class="fa-solid fa-dog"></i>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush bg-warning">
-                    <li class="list-group-item bg-warning border-0">PRICE: 99$</li>
-                    <li class="list-group-item bg-warning border-0">TYPE: food</li>
-                    <li class="list-group-item bg-warning border-0">
-                        <i class="fa-solid fa-dog"></i>
-                    </li>
-                </ul>
-            </div>
+            <?php endforeach; ?>
         </div>
 
     </main>
