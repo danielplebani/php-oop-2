@@ -108,7 +108,11 @@ array_push(
                         <li class="list-group-item bg-warning border-0">TYPE: <?= $product->getType() ?></li>
                         <li class="list-group-item bg-warning border-0">
                             CATEGORY:
-                            <i class="fa-solid fa-dog"></i>
+                            <?php if ($product->getCategory() == 'dog') : ?>
+                                <i class="fa-solid fa-dog"></i>
+                            <?php else : ?>
+                                <i class="fa-solid fa-cat"></i>
+                            <?php endif; ?>
                         </li>
                     </ul>
                 </div>

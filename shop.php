@@ -37,6 +37,11 @@ class Shop
     {
         return $this->type;
     }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
 }
 
 
