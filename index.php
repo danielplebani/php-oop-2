@@ -11,8 +11,8 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 -->
 
 <?php
-include './models/shop.php';
-include './models/db.php';
+require __DIR__ . './models/shop.php';
+require __DIR__ . './models/db.php';
 
 array_push(
     $shopProducts,

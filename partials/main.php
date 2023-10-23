@@ -20,9 +20,9 @@
                         <li class="list-group-item bg-warning border-0">
                             CATEGORY:
                             <?php if ($product->getCategory() == 'dog') : ?>
-                                <i class="fa-solid fa-dog"></i>
+                                <i class="fa-solid fa-dog"> dog</i>
                             <?php else : ?>
-                                <i class="fa-solid fa-cat"></i>
+                                <i class="fa-solid fa-cat"> cat</i>
                             <?php endif; ?>
                         </li>
                     </ul>
