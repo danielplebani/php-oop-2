@@ -13,26 +13,6 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 <?php
 require __DIR__ . './models/shop.php';
 require __DIR__ . './db.php';
-
-array_push(
-    $shopProducts,
-    $RoyalCanin,
-    $Eukanuba,
-    $Felix,
-    $Sheba,
-    $Kong,
-    $Rugby,
-    $Fish,
-    $Mouse,
-    $Matilda,
-    $Ferplast,
-    $Domus,
-    $Glait,
-    $Doccino,
-    $Salviette,
-    $Pettine,
-    $Pala
-);
 ?>
 
 

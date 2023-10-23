@@ -34,12 +34,8 @@ class Shop
     use TypeTrait;
 
     use CategoryTrait;
-
-    
+   
 }
-
-
-
 
 
 require __DIR__ . './food.php';
