@@ -1,5 +1,12 @@
 <?php
 
+require_once __DIR__ . '/../trait/img.php';
+require_once __DIR__ . '/../trait/title.php';
+require_once __DIR__ . '/../trait/price.php';
+require_once __DIR__ . '/../trait/type.php';
+require_once __DIR__ . '/../trait/category.php';
+
+
 class Shop
 {
     public $img;
@@ -18,38 +25,27 @@ class Shop
         $this->category = $category;
     }
 
-    public function getImg()
-    {
-        return $this->img;
-    }
+    use ImgTrait;
 
-    public function getTitle()
-    {
-        return $this->title;
-    }
+    use TitleTrait;
 
-    public function getPrice()
-    {
-        return $this->price;
-    }
+    use PriceTrait;
+    
+    use TypeTrait;
 
-    public function getType()
-    {
-        return $this->type;
-    }
+    use CategoryTrait;
 
-    public function getCategory()
-    {
-        return $this->category;
-    }
+    
 }
+
+
+
+
 
 require __DIR__ . './food.php';
 require __DIR__ . './games.php';
 require __DIR__ . './kennels.php';
 require __DIR__ . './cleaning_objects.php';
-
-
 
 //cibo cani
 $RoyalCanin = new Food ('./img/RoyalCanin.jpg', 'Royal Canin', '14.99$', 'food', 'dog');

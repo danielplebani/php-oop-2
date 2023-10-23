@@ -12,7 +12,7 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 
 <?php
 require __DIR__ . './models/shop.php';
-require __DIR__ . './models/db.php';
+require __DIR__ . './db.php';
 
 array_push(
     $shopProducts,
