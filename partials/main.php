@@ -15,7 +15,7 @@
                     </div>
 
                     <ul class="list-group list-group-flush bg-warning">
-                        <li class="list-group-item bg-warning border-0">PRICE: <?= $product->getPrice() ?></li>
+                        <li class="list-group-item bg-warning border-0">PRICE: <?= $product->getPrice() ?>$</li>
                         <li class="list-group-item bg-warning border-0">TYPE: <?= $product->getType() ?></li>
                         <li class="list-group-item bg-warning border-0">
                             CATEGORY:
