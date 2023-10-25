@@ -64,7 +64,6 @@ $Ferplast = new Kennels ('./img/Ferplast.jpg', 'Ferplast', '28.99$', 'kennels', 
 $Domus = new Kennels ('./img/Domus.webp', 'Domus', '22.99$', 'kennels', 'cat');
 $Glait = new Kennels ('./img/Glait.jpg', 'Glait', '19.99$', 'kennels', 'cat');
 
-
 //oggetti_pulizia cani
 $Doccino = new CleaningObjects ('./img/Doccino.jpg', 'Doccino', '14.99$', 'cleaning objects', 'dog');
 $Salviette = new CleaningObjects ('./img/Salviette.jpg', 'Salviette', '7.99$', 'cleaning objects', 'dog');
