@@ -44,10 +44,10 @@ class Shop
 }
 
 
-require __DIR__ . './food.php';
-require __DIR__ . './games.php';
-require __DIR__ . './kennels.php';
-require __DIR__ . './cleaning_objects.php';
+require __DIR__ . '/food.php';
+require __DIR__ . '/games.php';
+require __DIR__ . '/kennels.php';
+require __DIR__ . '/cleaning_objects.php';
 
 //cibo cani
 $RoyalCanin = new Food ('./img/RoyalCanin.jpg', 'Royal Canin', 14.99, 'food', 'dog');
