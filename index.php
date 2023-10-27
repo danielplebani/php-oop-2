@@ -28,8 +28,8 @@ if ($debug == true) {
 
 
 
-require __DIR__ . './models/shop.php';
-require __DIR__ . './db.php';
+require __DIR__ . 'models/shop.php';
+require __DIR__ . 'db.php';
 ?>
 
 
